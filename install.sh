@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_NAME="MTProxy Manager"
+APP_NAME="TG Proxy Manager"
 APP_VERSION="2.0"
 IMAGE_DEFAULT="telegrammessenger/proxy:latest"
 CONTAINER_DEFAULT="mtproxy"
-CONFIG_DIR="/etc/mtproxy-manager"
+CONFIG_DIR="/etc/tg-proxy-manager"
 CONFIG_FILE="$CONFIG_DIR/config.env"
-DATA_DIR="/var/lib/mtproxy-manager/data"
-SELF_PATH="/usr/local/bin/mtproxy-manager"
+DATA_DIR="/var/lib/tg-proxy-manager/data"
+SELF_PATH="/usr/local/bin/tg"
 
 if [ -t 1 ]; then
     R=$'\033[0;31m'
@@ -333,8 +333,8 @@ help_text() {
 $APP_NAME v$APP_VERSION
 
 Usage:
-  mtproxy-manager
-  mtproxy-manager <command>
+  tg
+  tg <command>
 
 Commands:
   install            Install and start the proxy
